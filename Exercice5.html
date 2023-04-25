@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5</title>
+     <style class="css:">
+    
+     body{
+        background: #c8d4c4;
+       }
+     #container{
+     width:600px;
+     margin:0 auto;
+     margin-top:10%;
+     }
+       /* Bordered form */
+       form {
+        width:100%;
+        padding: 40px;
+        border: 1px solid #f1f1f1;
+        background: #fff;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+       }
+       #container h1{
+        width: 28%;
+        margin: 2px;
+        padding-bottom: 10px;
+       } 
+       /* Set a style for all buttons */
+       input{
+       border: none;
+       width:40%;
+       border-bottom: 1px solid black;
+       
+         }
+       input[type=submit] {
+        background-color: #217a33;
+        color: white;
+        padding: 4px 8px;
+        margin: 4px 0;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+       }
+       input[type=submit]:hover {
+        background-color: white;
+        color:green;
+        border: 1px solid #53af57;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div style="position:relative;">
+            <form action="get" method="verif-form.php"style="border: 2px;padding:100px;">
+            <h1>Sign up</h1>
+            <input type="text" placeholder="Username" name="Username"><br/><br/>
+
+           <input type="text" placeholder="Email" name="Email" ><br/><br/>
+
+           <input type="password" placeholder="Password" name="Password"><br/><br/>
+
+           <input type="text" placeholder="Retype password" name="Retype password"><br/><br/>
+
+          <input type="submit" id='submit' value='Sign up' > 
+          </form>
+        </div>
+    </div>
+    <div style="position: absolute;top: 400px;right: 750px;">
+        <div class="section">OR</div>
+    </div>
+
+      <div class="section">
+        <div style="position:absolute; top: 300px; right: 400px;
+            background-color:blue;padding: 5px;margin-left:15px;margin-right:10px;">
+            <div style="color: aliceblue;">Login in with Twiter</div>
+        </div>
+
+        <div style="position:absolute; top: 355px; right: 400px;
+            background-color:aquamarine;padding: 5px;margin-left:15px;margin-right:10px;">
+            <div style="color: aliceblue;">Login in with Facebook</div>
+        </div>
+
+       <div style="position:absolute; top: 415px; right: 400px;
+          background-color:red;padding: 5px;margin-left:15px;margin-right:10px;">
+          <div style="color: aliceblue;">Login in with Google</div>  
+        </div>
+    </div>
+
+</body>
+</html>
